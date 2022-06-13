@@ -1,11 +1,11 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using Random = UnityEngine.Random;
 
 namespace EnglishByPictures
 {
@@ -15,23 +15,26 @@ namespace EnglishByPictures
         [SerializeField] TextMeshProUGUI mainText;
         [SerializeField] TextMeshProUGUI wordsLeftText;
         [SerializeField] TextMeshProUGUI finishText;
+        [SerializeField] TextMeshProUGUI translatedText;
         [SerializeField] Image mainImage;
         [SerializeField] Button learnButton;
         [SerializeField] Button knowButton;
-        [SerializeField] Button switchThemeButton;
-        [SerializeField] Sprite switchThemeBlackImage;
-        [SerializeField] Sprite switchThemeWhiteImage;
-        [SerializeField] Image backgroundImage;
-        [SerializeField] Color blackColor;
-        [SerializeField] Color whiteColor;
+        [SerializeField] DropdownLanguages dropdownLanguages;
 
         List<string> words = new();
         List<string> learnedWords = new();
         string path;
         int currentNumber = -1;
         int countBeforeHideFinishText = 2;
-        Theme theme = Theme.Black;
         LoadAndSave loadAndSave;
+        Translate translate;
+        string currentWord;
+
+        private void OnValidate()
+        {
+            if (!dropdownLanguages)
+                dropdownLanguages = FindObjectOfType<DropdownLanguages>();
+        }
 
         void Start()
         {
@@ -41,6 +44,7 @@ namespace EnglishByPictures
 
         void Init()
         {
+            translate = new Translate();
             loadAndSave = new LoadAndSave();
             path = Application.dataPath + "/Text/";
             learnedWords = loadAndSave.LoadLearnedWords(path);
@@ -49,44 +53,43 @@ namespace EnglishByPictures
             RemoveLearnedWords();
             Subscribe();
             ShowWordsLeft();
-            theme = loadAndSave.LoadThemeSettings();
-            SetTheme();
         }
 
-        void ShowWordsLeft()
+        void ChangeCulture() => GetTranslatedText(currentWord);
+
+        void ShowWordsLeft() => wordsLeftText.text = $"{words.Count} words left";
+
+        async UniTask ShowWord()
         {
-            wordsLeftText.text = $"{words.Count} words left";
-        }
-        
-        void ShowWord()
-        {
-            var randomNumber = GetRandomNumber();
+            var randomNumber = Utils.GetRandomNumber(words);
             while (currentNumber == randomNumber && words.Count > 1)
-                randomNumber = GetRandomNumber();
+                randomNumber = Utils.GetRandomNumber(words);
 
             currentNumber = randomNumber;
-            var str = words[randomNumber];
-            mainText.text = char.ToUpper(str[0]) + str[1..];
+            currentWord = words[randomNumber];
+            mainText.text = Utils.ToUpperFirstChar(currentWord);
             mainImage.sprite = Resources.Load<Sprite>(words[randomNumber]);
-
+            await GetTranslatedText(currentWord);
             CheckToHideFinishText();
+        }
+
+        async Task GetTranslatedText(string word)
+        {
+            var text = await translate.Process(dropdownLanguages.CurrentCulture, word);
+            translatedText.text = Utils.ToUpperFirstChar(text);
         }
 
         private void CheckToHideFinishText()
         {
             if (finishText.isActiveAndEnabled)
                 countBeforeHideFinishText--;
-            
+
             if (countBeforeHideFinishText == 0)
                 finishText.enabled = false;
         }
 
-        int GetRandomNumber() => Random.Range(0, words.Count);
-        
-        void Learn()
-        {
-            ShowWord();
-        }
+
+        void Learn() => ShowWord();
 
         void Know()
         {
@@ -100,38 +103,6 @@ namespace EnglishByPictures
             ShowWord();
         }
 
-        void SwitchTheme()
-        {
-            if (theme == Theme.Black)
-                theme = Theme.White;
-            else
-                theme = Theme.Black;
-            
-            SetTheme();
-            loadAndSave.SaveThemeSettings(theme);
-        }
-
-        private void SetTheme()
-        {
-            Color buttonTextColor;
-            Color textColor;
-            if (theme == Theme.Black)
-            {
-                buttonTextColor = whiteColor;
-                textColor = blackColor;
-                switchThemeButton.image.sprite = switchThemeBlackImage;
-            }
-            else
-            {
-                switchThemeButton.image.sprite = switchThemeWhiteImage;
-                textColor = whiteColor;
-                buttonTextColor = blackColor;
-            }
-
-            backgroundImage.color = buttonTextColor;
-            mainText.color = textColor;
-            wordsLeftText.color = textColor;
-        }
 
         void RemoveLearnedWords()
         {
@@ -145,19 +116,19 @@ namespace EnglishByPictures
             words = loadAndSave.LoadWords(path);
             finishText.enabled = true;
         }
-        
+
         void Subscribe()
         {
+            dropdownLanguages.onCultureChanged += ChangeCulture;
             learnButton.onClick.AddListener(Learn);
             knowButton.onClick.AddListener(Know);
-            switchThemeButton.onClick.AddListener(SwitchTheme);
         }
 
         void Unsubscribe()
         {
+            dropdownLanguages.onCultureChanged -= ChangeCulture;
             learnButton.onClick.RemoveListener(Learn);
             knowButton.onClick.RemoveListener(Know);
-            switchThemeButton.onClick.RemoveListener(SwitchTheme);
         }
 
         void OnDisable()

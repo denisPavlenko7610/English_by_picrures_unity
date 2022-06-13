@@ -7,9 +7,9 @@ namespace EnglishByPictures
 {
 #if UNITY_EDITOR
 
-    public class ReadFileNames : MonoBehaviour
+    public class GetTextFromImages : MonoBehaviour
     {
-        [ContextMenu("ReadImageNames")]
+        [ContextMenu("ReadImagesName")]
         public async Task ReadImageNames()
         {
             var path = Application.dataPath;
@@ -34,7 +34,7 @@ namespace EnglishByPictures
                 lines.Add(text);
                 await File.WriteAllLinesAsync(path + "/Text/Text.txt", lines);
             }
-            
+
             print("Text added");
         }
     }
