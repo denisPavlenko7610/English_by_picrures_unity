@@ -46,7 +46,7 @@ namespace EnglishByPictures
         {
             translate = new Translate();
             loadAndSave = new LoadAndSave();
-            path = Application.dataPath + "/Text/";
+            path = Application.persistentDataPath + "/Text.txt";
             learnedWords = loadAndSave.LoadLearnedWords(path);
             finishText.enabled = false;
             words = loadAndSave.LoadWords(path);

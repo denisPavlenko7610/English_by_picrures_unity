@@ -10,18 +10,23 @@ namespace EnglishByPictures
         [SerializeField] TMP_Dropdown dropdown;
         string currentCultureKey = "CurrentCulture";
         public string CurrentCulture { get; set; } = "Ru";
-        public event Action onCultureChanged; 
+        public event Action onCultureChanged;
 
         private void OnValidate()
         {
             if (!dropdown)
-            { dropdown = GetComponent<TMP_Dropdown>();
-                dropdown.AddOptions(Enum
-                    .GetValues(typeof(Languages))
-                    .Cast<Languages>()
-                    .Select(d => d.ToString())
-                    .ToList());
-            }
+                dropdown = GetComponent<TMP_Dropdown>();
+        }
+
+        [ContextMenu("Set Options")]
+        public void SetOptions()
+        {
+            dropdown.ClearOptions();
+            dropdown.AddOptions(Utils
+                .GetEnumValues<Languages>()
+                .Cast<Languages>()
+                .Select(d => d.ToString())
+                .ToList());
         }
 
         private void OnEnable() => dropdown.onValueChanged.AddListener(OnSelected);
@@ -33,26 +38,19 @@ namespace EnglishByPictures
             if (PlayerPrefs.HasKey(currentCultureKey))
             {
                 CurrentCulture = PlayerPrefs.GetString(currentCultureKey);
-                dropdown.value = Utils.ConvertEnumToInt(CurrentCulture);
+                dropdown.value = Utils.ConvertEnumToInt<Languages>(CurrentCulture);
             }
         }
 
-        public void OnSelected(int value)
+        private void OnSelected(int value)
         {
-            if (value == (int)Languages.Ru)
+            var languagesArray = Utils.GetEnumValues<Languages>();
+            foreach (var lang in languagesArray)
             {
-                CurrentCulture = Languages.Ru.ToString();
-            }
-            else if (value == (int)Languages.De)
-            {
-                CurrentCulture = Languages.De.ToString();
-            }
-            else if (value == (int)Languages.Uk)
-            {
-                CurrentCulture = Languages.Uk.ToString();
+                CurrentCulture = lang.ToString();
             }
 
-            CurrentCulture = Utils.ConvertEnumToString(value);
+            CurrentCulture = Utils.ConvertEnumToString<Languages>(value);
             onCultureChanged?.Invoke();
             PlayerPrefs.SetString(currentCultureKey, CurrentCulture);
         }

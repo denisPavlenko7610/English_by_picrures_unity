@@ -1,4 +1,0 @@
-cow
-fox
-hen
-octopus
