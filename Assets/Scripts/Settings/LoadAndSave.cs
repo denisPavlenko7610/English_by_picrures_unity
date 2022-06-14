@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 
@@ -9,15 +11,21 @@ namespace EnglishByPictures
     {
         string themeKey = "Theme";
 
-        public List<string> LoadWords(string path)
+        public List<string> LoadWords()
         {
             List<string> words = new();
-            using var sr = new StreamReader(path + "Text.txt");
+            TextAsset text = Resources.Load<TextAsset>("Text/Text");
+            if (text == null)
+                throw new FileNotFoundException("Text txt not found");
+
+            using StreamReader sr = new StreamReader(new MemoryStream(text.bytes));
+
             while (sr.ReadLine() is { } line)
                 words.Add(line);
-
-            return words;
+            
+            return words.Shuffle();
         }
+
 
         public void SaveLearnedWords(string path, List<string> learnedWords)
         {
@@ -49,7 +57,7 @@ namespace EnglishByPictures
             var themeInSettings = PlayerPrefs.GetString(themeKey);
             if (themeInSettings == Theme.Black.ToString())
                 return theme = Theme.Black;
-            
+
             return theme = Theme.White;
         }
 

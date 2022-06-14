@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "4cc890890412",
         "name": "com.Rdragon7.EnglishByPicrures",
-        "processId": 18734,
+        "processId": 10170,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -12,6 +12,60 @@
             "deviceId": "4cc890890412",
             "name": "com.Rdragon7.EnglishByPicrures",
             "processId": 18734,
+            "exited": false
+        },
+        {
+            "deviceId": "4cc890890412",
+            "name": "com.Rdragon7.EnglishByPicrures",
+            "processId": 2852,
+            "exited": false
+        },
+        {
+            "deviceId": "4cc890890412",
+            "name": "com.Rdragon7.EnglishByPicrures",
+            "processId": 4007,
+            "exited": false
+        },
+        {
+            "deviceId": "4cc890890412",
+            "name": "com.Rdragon7.EnglishByPicrures",
+            "processId": 4430,
+            "exited": false
+        },
+        {
+            "deviceId": "4cc890890412",
+            "name": "com.Rdragon7.EnglishByPicrures",
+            "processId": 6395,
+            "exited": false
+        },
+        {
+            "deviceId": "4cc890890412",
+            "name": "com.Rdragon7.EnglishByPicrures",
+            "processId": 7830,
+            "exited": false
+        },
+        {
+            "deviceId": "4cc890890412",
+            "name": "com.Rdragon7.EnglishByPicrures",
+            "processId": 8548,
+            "exited": false
+        },
+        {
+            "deviceId": "4cc890890412",
+            "name": "com.Rdragon7.EnglishByPicrures",
+            "processId": 8940,
+            "exited": false
+        },
+        {
+            "deviceId": "4cc890890412",
+            "name": "com.Rdragon7.EnglishByPicrures",
+            "processId": 9485,
+            "exited": false
+        },
+        {
+            "deviceId": "4cc890890412",
+            "name": "com.Rdragon7.EnglishByPicrures",
+            "processId": 10170,
             "exited": false
         }
     ],

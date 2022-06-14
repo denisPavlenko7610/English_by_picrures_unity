@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
@@ -49,7 +50,7 @@ namespace EnglishByPictures
             path = Application.persistentDataPath + "/Text.txt";
             learnedWords = loadAndSave.LoadLearnedWords(path);
             finishText.enabled = false;
-            words = loadAndSave.LoadWords(path);
+            words = loadAndSave.LoadWords();
             RemoveLearnedWords();
             Subscribe();
             ShowWordsLeft();
@@ -67,7 +68,7 @@ namespace EnglishByPictures
 
             currentNumber = randomNumber;
             currentWord = words[randomNumber];
-            mainText.text = Utils.ToUpperFirstChar(currentWord);
+            mainText.text = currentWord;
             mainImage.sprite = Resources.Load<Sprite>(words[randomNumber]);
             await GetTranslatedText(currentWord);
             CheckToHideFinishText();
@@ -113,7 +114,7 @@ namespace EnglishByPictures
         void ResetWords()
         {
             learnedWords.Clear();
-            words = loadAndSave.LoadWords(path);
+            words = loadAndSave.LoadWords();
             finishText.enabled = true;
         }
 
