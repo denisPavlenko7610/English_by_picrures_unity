@@ -5,7 +5,6 @@ namespace EnglishByPictures
 {
     using SimpleJSON;
     using UnityEngine;
-    using System.Collections;
 
     public class Translate
     {

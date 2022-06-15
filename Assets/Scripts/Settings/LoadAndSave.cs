@@ -29,7 +29,7 @@ namespace EnglishByPictures
 
         public void SaveLearnedWords(string path, List<string> learnedWords)
         {
-            var fs = new FileStream(path + "LearnedWords.dat", FileMode.Create);
+            var fs = new FileStream(path + "/LearnedWords.dat", FileMode.Create);
             var bf = new BinaryFormatter();
             bf.Serialize(fs, learnedWords);
             fs.Close();
@@ -38,7 +38,7 @@ namespace EnglishByPictures
         public List<string> LoadLearnedWords(string path)
         {
             List<string> learnedWords = new();
-            var pathToLearnedWords = path + "LearnedWords.dat";
+            var pathToLearnedWords = path + "/LearnedWords.dat";
             if (!File.Exists(pathToLearnedWords))
                 return learnedWords;
 

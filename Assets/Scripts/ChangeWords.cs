@@ -1,6 +1,5 @@
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
@@ -24,7 +23,6 @@ namespace EnglishByPictures
 
         List<string> words = new();
         List<string> learnedWords = new();
-        string path;
         int currentNumber = -1;
         int countBeforeHideFinishText = 2;
         LoadAndSave loadAndSave;
@@ -47,8 +45,7 @@ namespace EnglishByPictures
         {
             translate = new Translate();
             loadAndSave = new LoadAndSave();
-            path = Application.persistentDataPath + "/Text.txt";
-            learnedWords = loadAndSave.LoadLearnedWords(path);
+            learnedWords = loadAndSave.LoadLearnedWords(Application.persistentDataPath);
             finishText.enabled = false;
             words = loadAndSave.LoadWords();
             RemoveLearnedWords();
@@ -135,13 +132,13 @@ namespace EnglishByPictures
         void OnDisable()
         {
             Unsubscribe();
-            loadAndSave.SaveLearnedWords(path, learnedWords);
+            loadAndSave.SaveLearnedWords(Application.persistentDataPath, learnedWords);
         }
 
         void OnDestroy()
         {
             Unsubscribe();
-            loadAndSave.SaveLearnedWords(path, learnedWords);
+            loadAndSave.SaveLearnedWords(Application.persistentDataPath, learnedWords);
         }
     }
 }

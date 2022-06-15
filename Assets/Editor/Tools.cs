@@ -28,7 +28,7 @@ namespace EnglishByPictures
 
                 if (text == "")
                     continue;
-
+ 
                 lines.Add(Utils.ToUpperFirstChar(text));
                 await File.WriteAllLinesAsync(pathToSave, lines);
             }
@@ -63,11 +63,15 @@ namespace EnglishByPictures
         [MenuItem("Tools/Destroy saved file")]
         public static void DestroyFile()
         {
-            var pathToLearnedWords = Application.dataPath + "/Text/LearnedWords.dat";
+            var pathToLearnedWords = Application.persistentDataPath + "/LearnedWords.dat";
             if (File.Exists(pathToLearnedWords))
             {
                 File.Delete(pathToLearnedWords);
                 Debug.Log("File deleted");
+            }
+            else
+            {
+                Debug.Log("File is empty");
             }
         }
     }
