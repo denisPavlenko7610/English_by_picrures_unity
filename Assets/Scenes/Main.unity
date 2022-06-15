@@ -777,8 +777,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 13.911, y: -165.2}
-  m_SizeDelta: {x: 1124.7, y: 148.6}
+  m_AnchoredPosition: {x: 13.911, y: -191.47453}
+  m_SizeDelta: {x: 1124.7, y: 201.1492}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &468928013
 MonoBehaviour:
@@ -848,6 +848,10 @@ MonoBehaviour:
     - m_Text: De
       m_Image: {fileID: 0}
     - m_Text: Uk
+      m_Image: {fileID: 0}
+    - m_Text: Es
+      m_Image: {fileID: 0}
+    - m_Text: Ar
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1163,8 +1167,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 5, y: 0.000030517578}
-  m_SizeDelta: {x: -30, y: 0.0000076294}
+  m_AnchoredPosition: {x: 5, y: 15}
+  m_SizeDelta: {x: -30, y: -30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &977626340
 MonoBehaviour:
@@ -1213,14 +1217,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 63.4
+  m_fontSize: 124.11
   m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 124.11
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -1420,8 +1424,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -163.44061, y: 883.11304}
-  m_SizeDelta: {x: 956.6628, y: 643.3405}
+  m_AnchoredPosition: {x: -14.1099, y: 1111.9}
+  m_SizeDelta: {x: 1255.3242, y: 185.78}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1215561686
 MonoBehaviour:
@@ -1443,9 +1447,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'You learned all words.
-
-    New words will be soon.'
+  m_text: You learned all words. New words will be soon.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 90983636075027b4c87deb5118b6a397, type: 2}
   m_sharedMaterial: {fileID: 6849447866639917115, guid: 90983636075027b4c87deb5118b6a397, type: 2}
@@ -1472,7 +1474,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 64.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1557,8 +1559,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 9.8824005}
+  m_SizeDelta: {x: 0, y: -19.765}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1249451283
 MonoBehaviour:
@@ -1759,7 +1761,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 96.85
+  m_fontSize: 134.35
   m_fontSizeBase: 14
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -2198,7 +2200,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0.000002861, y: 594}
-  m_SizeDelta: {x: 1058.8193, y: 801.35}
+  m_SizeDelta: {x: 850, y: 850}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1532009575
 MonoBehaviour:
@@ -2277,7 +2279,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: 0, y: 2}
-  m_SizeDelta: {x: 0, y: 624.0016}
+  m_SizeDelta: {x: 0, y: 944.9283}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1537281734
 MonoBehaviour:
@@ -2322,7 +2324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.7725491, g: 0.49411768, b: 0.9333334, a: 0.5176471}
+  m_Color: {r: 0.7725491, g: 0.49411768, b: 0.9333334, a: 0.8156863}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -2517,7 +2519,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -335}
+  m_AnchoredPosition: {x: 0, y: -418}
   m_SizeDelta: {x: 0, y: 191}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1632028078
@@ -2703,11 +2705,11 @@ RectTransform:
   m_Father: {fileID: 1825554340}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: 0}
-  m_SizeDelta: {x: 20, y: 20}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 9.8819}
+  m_SizeDelta: {x: 191.5111, y: 166.55}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1802107007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2783,8 +2785,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1.1430969}
-  m_SizeDelta: {x: 0, y: 70.858}
+  m_AnchoredPosition: {x: 0, y: 36.564}
+  m_SizeDelta: {x: 0, y: 186.32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1825554341
 MonoBehaviour:
@@ -3038,10 +3040,10 @@ RectTransform:
   m_Father: {fileID: 1504842103}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.63975656}
+  m_AnchorMin: {x: 0, y: 0.72358286}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.000061035156}
-  m_SizeDelta: {x: 0, y: -1.6878052}
+  m_AnchoredPosition: {x: 0, y: 0.000061035156}
+  m_SizeDelta: {x: 0, y: -1.7433014}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &2131250149
 GameObject:

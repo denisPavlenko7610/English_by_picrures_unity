@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 using TMPro;
 using UnityEngine;
@@ -38,7 +39,17 @@ namespace EnglishByPictures
             if (PlayerPrefs.HasKey(currentCultureKey))
             {
                 CurrentCulture = PlayerPrefs.GetString(currentCultureKey);
-                dropdown.value = Utils.ConvertEnumToInt<Languages>(CurrentCulture);
+                try
+                {
+                    dropdown.value = Utils.ConvertEnumToInt<Languages>(CurrentCulture);
+                }
+                catch (Exception e)
+                {
+                    Debug.Log(e);
+                    Debug.Log("language is not found");
+                    CurrentCulture = "Ru";
+                    dropdown.value = Utils.ConvertEnumToInt<Languages>(CurrentCulture);
+                }
             }
         }
 
