@@ -53,7 +53,7 @@ namespace EnglishByPictures
                 
                 var text = fileName.Name;
                 text = Regex.Replace(text, pattern, "");
-                fileName.MoveTo(dir + text);
+                fileName.Rename(text);
                 Debug.Log("new name: "+ text);
             }
             

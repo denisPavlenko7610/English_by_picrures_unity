@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using Random = UnityEngine.Random;
 
@@ -13,5 +14,6 @@ namespace EnglishByPictures
         public static string ConvertEnumToString<T>(int value) => Enum.GetName(typeof(T), value);
         public static Array GetEnumValues<T>() => Enum.GetValues(typeof(T));
         public static List<string> Shuffle(this List<string> list) => list.OrderBy(a => Guid.NewGuid()).ToList();
+        public static void Rename(this FileInfo fileInfo, string newName) => fileInfo.MoveTo(fileInfo.Directory.FullName + "\\" + newName);
     }
 }
