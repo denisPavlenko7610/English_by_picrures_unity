@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
@@ -40,6 +41,7 @@ namespace EnglishByPictures
         [MenuItem("Tools/Rename Images")]
         public static void RenameImages()
         {
+            var hasError = false;
             DirectoryInfo dir = new DirectoryInfo(Application.dataPath + "/Sprites/Resources/");
             FileInfo[] info = dir.GetFiles("*.*");
             var pattern = @"(^\d*-)";
@@ -53,11 +55,25 @@ namespace EnglishByPictures
                 
                 var text = fileName.Name;
                 text = Regex.Replace(text, pattern, "");
-                fileName.Rename(text);
+                try
+                {
+                    fileName.Rename(text);
+
+                }
+                catch (IOException e)
+                {
+                    Debug.LogError(e);
+                    hasError = true;
+                    continue;
+                }
+                
                 Debug.Log("new name: "+ text);
             }
-            
-            Debug.Log("Renamed successfully");
+
+            if (!hasError)
+                Debug.Log("Renamed successfully");
+ 
+            Debug.Log("Renamed with error");
         }
 
         [MenuItem("Tools/Destroy saved file")]

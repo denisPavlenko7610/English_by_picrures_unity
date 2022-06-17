@@ -74,6 +74,7 @@ namespace EnglishByPictures
         async Task GetTranslatedText(string word)
         {
             var text = await translate.Process(dropdownLanguages.CurrentCulture, word);
+            translatedText.text = "...";
             translatedText.text = Utils.ToUpperFirstChar(text);
         }
 

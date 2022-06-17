@@ -10,7 +10,7 @@ namespace EnglishByPictures
     {
         [SerializeField] TMP_Dropdown dropdown;
         string currentCultureKey = "CurrentCulture";
-        public string CurrentCulture { get; set; } = "Ru";
+        public string CurrentCulture { get; set; } = Languages.Ru.ToString();
         public event Action onCultureChanged;
 
         private void OnValidate()
@@ -26,7 +26,7 @@ namespace EnglishByPictures
             dropdown.AddOptions(Utils
                 .GetEnumValues<Languages>()
                 .Cast<Languages>()
-                .Select(d => d.ToString())
+                .Select(LanguagesConverter.ConvertToText)
                 .ToList());
         }
 
@@ -47,7 +47,7 @@ namespace EnglishByPictures
                 {
                     Debug.Log(e);
                     Debug.Log("language is not found");
-                    CurrentCulture = "Ru";
+                    CurrentCulture = Languages.Ru.ToString();
                     dropdown.value = Utils.ConvertEnumToInt<Languages>(CurrentCulture);
                 }
             }
