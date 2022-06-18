@@ -90,6 +90,7 @@ namespace EnglishByPictures
 
                 if (!Regex.IsMatch(fileName.Name, pattern))
                     continue;
+                
                 isFound = true;
                 var text = fileName.Name;
                 Debug.Log(text);

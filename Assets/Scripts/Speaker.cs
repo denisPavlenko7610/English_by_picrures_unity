@@ -54,8 +54,6 @@ namespace EnglishByPictures
             var text = rgx.Replace (sourceText, "%20");
             var url = "https://translate.google.com.vn/translate_tts?/ie=UTF-8&q=" + text
                 + "&tl=" + targetLang + "&client=tw-ob";
-            
-            Debug.Log(url);
 
             var www = new WWW(url);
             await www;
