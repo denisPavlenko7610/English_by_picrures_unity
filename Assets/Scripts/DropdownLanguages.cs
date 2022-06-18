@@ -32,9 +32,13 @@ namespace EnglishByPictures
 
         private void OnEnable() => dropdown.onValueChanged.AddListener(OnSelected);
 
-        private void OnDisable() => dropdown.onValueChanged.RemoveListener(OnSelected);
+        private void OnDisable()
+        {
+            dropdown.onValueChanged.RemoveListener(OnSelected);
+            PlayerPrefs.SetString(currentCultureKey, CurrentCulture);
+        }
 
-        private void Start()
+        private void Awake()
         {
             if (PlayerPrefs.HasKey(currentCultureKey))
             {
@@ -47,9 +51,12 @@ namespace EnglishByPictures
                 {
                     Debug.Log(e);
                     Debug.Log("language is not found");
-                    CurrentCulture = Languages.Ru.ToString();
                     dropdown.value = Utils.ConvertEnumToInt<Languages>(CurrentCulture);
                 }
+            }
+            else
+            {
+                dropdown.value = Utils.ConvertEnumToInt<Languages>(CurrentCulture);
             }
         }
 
@@ -63,6 +70,11 @@ namespace EnglishByPictures
 
             CurrentCulture = Utils.ConvertEnumToString<Languages>(value);
             onCultureChanged?.Invoke();
+            PlayerPrefs.SetString(currentCultureKey, CurrentCulture);
+        }
+
+        private void OnDestroy()
+        {
             PlayerPrefs.SetString(currentCultureKey, CurrentCulture);
         }
     }

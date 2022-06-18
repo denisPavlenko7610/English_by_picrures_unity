@@ -50,15 +50,21 @@ namespace EnglishByPictures
 
         public Theme LoadThemeSettings()
         {
-            Theme theme = Theme.Black;
-            if (!PlayerPrefs.HasKey(themeKey))
-                return theme;
+            var theme = Theme.Black;
+            if (PlayerPrefs.HasKey(themeKey))
+            {
+                var themeInSettings = PlayerPrefs.GetString(themeKey);
+                if (themeInSettings == Theme.Black.ToString())
+                {
+                    theme = Theme.Black;
+                }
+                else
+                {
+                    theme = Theme.White;
+                }
+            }
 
-            var themeInSettings = PlayerPrefs.GetString(themeKey);
-            if (themeInSettings == Theme.Black.ToString())
-                return theme = Theme.Black;
-
-            return theme = Theme.White;
+            return theme;
         }
 
         public void SaveThemeSettings(Theme theme)

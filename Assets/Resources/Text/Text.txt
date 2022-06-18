@@ -34,7 +34,6 @@ Briefcase
 British-museum
 Broccoli
 Brush
-Bug
 Builder
 Bush
 Businessman
@@ -103,7 +102,6 @@ Empire-state
 Eraser
 Fire-extinguisher
 Fire
-Firefighter-1
 Firefighter
 First-aid-kit
 Fish
@@ -150,7 +148,6 @@ House
 Ice-cream
 Idea
 Jacket
-Jawbreaker
 Jeep
 Jellyfish
 Journalist
@@ -165,7 +162,6 @@ Knight
 Koala
 Lantern
 Laptop
-Leaf-1
 Leaf
 Leaning-tower-of-pisa
 Lemon
@@ -174,7 +170,6 @@ Lion
 Llama
 Lobster
 Location
-Logs
 Lotus
 Machete
 Magic-wand
@@ -187,7 +182,6 @@ Melodica
 Microphone
 Moai
 Monkey
-Mortarboard
 Mount-fuji
 Mushroom
 Mushrooms
@@ -242,7 +236,6 @@ School-bell
 Scissors
 Seahorse
 Seal
-Set-square
 Shark
 Sharpener
 Sheep
@@ -256,7 +249,6 @@ Smartphone
 Snail
 Snake
 Snare-drum
-Soldier-1
 Soldier
 Spinning-top
 Sport-shoes
@@ -300,7 +292,6 @@ Turkey
 Turntable
 Turtle
 Utility-knife
-Vibraphone
 Vines
 Vinyl-disc
 Violin
