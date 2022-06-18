@@ -13,23 +13,23 @@ namespace EnglishByPictures
         public static async void GetText()
         {
             var pathToSave = Application.dataPath + "/Resources/Text/Text.txt";
-            DirectoryInfo dir = new DirectoryInfo(Application.dataPath + "/Sprites/Resources/");
-            FileInfo[] info = dir.GetFiles("*.*");
+            var dir = new DirectoryInfo(Application.dataPath + "/Sprites/Resources/");
+            var info = dir.GetFiles("*.*");
 
             List<string> lines = new();
-            foreach (FileInfo fileName in info)
+            foreach (var fileName in info)
             {
                 if (fileName.Name.Contains("meta"))
                     continue;
 
-                string text = "";
+                var text = "";
                 var fileExtPos = fileName.Name.LastIndexOf(".");
                 if (fileExtPos >= 0)
                     text = fileName.Name.Substring(0, fileExtPos);
 
                 if (text == "")
                     continue;
- 
+
                 lines.Add(Utils.ToUpperFirstChar(text));
                 await File.WriteAllLinesAsync(pathToSave, lines);
             }
@@ -42,23 +42,22 @@ namespace EnglishByPictures
         public static void RenameImages()
         {
             var hasError = false;
-            DirectoryInfo dir = new DirectoryInfo(Application.dataPath + "/Sprites/Resources/");
-            FileInfo[] info = dir.GetFiles("*.*");
-            var pattern = @"(^\d*-)";
-            foreach (FileInfo fileName in info)
+            var dir = new DirectoryInfo(Application.dataPath + "/Sprites/Resources/");
+            var info = dir.GetFiles("*.*");
+            const string pattern = @"(^\d*-)";
+            foreach (var fileName in info)
             {
                 if (fileName.Name.Contains("meta"))
                     continue;
-                
+
                 if (!Regex.IsMatch(fileName.Name, pattern))
                     continue;
-                
+
                 var text = fileName.Name;
                 text = Regex.Replace(text, pattern, "");
                 try
                 {
                     fileName.Rename(text);
-
                 }
                 catch (IOException e)
                 {
@@ -66,14 +65,40 @@ namespace EnglishByPictures
                     hasError = true;
                     continue;
                 }
-                
-                Debug.Log("new name: "+ text);
-            }
 
+                Debug.Log("new name: " + text);
+            }
+ 
             if (!hasError)
                 Debug.Log("Renamed successfully");
- 
-            Debug.Log("Renamed with error");
+            else
+                Debug.Log("Renamed with error");
+        }
+
+        [MenuItem("Tools/Find duplicates")]
+        public static void FindDuplicates()
+        {
+            var isFound = false;
+            var dir = new DirectoryInfo(Application.dataPath + "/Sprites/Resources/");
+            var info = dir.GetFiles("*.*");
+            const string pattern = @"\d+";
+
+            foreach (var fileName in info)
+            {
+                if (fileName.Name.Contains("meta"))
+                    continue;
+
+                if (!Regex.IsMatch(fileName.Name, pattern))
+                    continue;
+                isFound = true;
+                var text = fileName.Name;
+                Debug.Log(text);
+            }
+
+            if (isFound)
+                Debug.Log("Has duplicates");
+            else
+                Debug.Log("0 duplicates");
         }
 
         [MenuItem("Tools/Destroy saved file")]

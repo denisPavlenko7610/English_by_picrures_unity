@@ -27,7 +27,8 @@ namespace EnglishByPictures
         int countBeforeHideFinishText = 2;
         LoadAndSave loadAndSave;
         Translate translate;
-        string currentWord;
+        public string CurrentWord { get; private set; }
+        public string TranslatedWord { get; private set; }
 
         private void OnValidate()
         {
@@ -53,7 +54,7 @@ namespace EnglishByPictures
             ShowWordsLeft();
         }
 
-        void ChangeCulture() => GetTranslatedText(currentWord);
+        void ChangeCulture() => GetTranslatedText(CurrentWord);
 
         void ShowWordsLeft() => wordsLeftText.text = $"{words.Count} words left";
 
@@ -64,16 +65,17 @@ namespace EnglishByPictures
                 randomNumber = Utils.GetRandomNumber(words);
 
             currentNumber = randomNumber;
-            currentWord = words[randomNumber];
-            mainText.text = currentWord;
+            CurrentWord = words[randomNumber];
+            mainText.text = CurrentWord;
             mainImage.sprite = Resources.Load<Sprite>(words[randomNumber]);
-            await GetTranslatedText(currentWord);
+            await GetTranslatedText(CurrentWord);
             CheckToHideFinishText();
         }
 
         async Task GetTranslatedText(string word)
         {
             var text = await translate.Process(dropdownLanguages.CurrentCulture, word);
+            TranslatedWord = text;
             translatedText.text = "...";
             translatedText.text = Utils.ToUpperFirstChar(text);
         }
