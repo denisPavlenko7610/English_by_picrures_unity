@@ -45,24 +45,26 @@ namespace EnglishByPictures
             var dir = new DirectoryInfo(Application.dataPath + "/Sprites/Resources/");
             var info = dir.GetFiles("*.*");
             const string pattern = @"(^\d*-)";
-            foreach (var fileName in info)
+            foreach (var file in info)
             {
-                if (fileName.Name.Contains("meta"))
+                if (file.Name.Contains("meta"))
                     continue;
 
-                if (!Regex.IsMatch(fileName.Name, pattern))
+                if (!Regex.IsMatch(file.Name, pattern))
                     continue;
 
-                var text = fileName.Name;
+                var text = file.Name;
                 text = Regex.Replace(text, pattern, "");
                 try
                 {
-                    fileName.Rename(text);
+                    file.Rename(text);
                 }
                 catch (IOException e)
                 {
                     Debug.LogError(e);
                     hasError = true;
+                    Debug.LogWarning("file deleted: " + file.Name);
+                    file.Delete();
                     continue;
                 }
 

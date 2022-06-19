@@ -50,9 +50,7 @@ namespace EnglishByPictures
 
         private async UniTask Process(string targetLang, string sourceText)
         {
-            var rgx = new Regex ("\\s+");
-            var text = rgx.Replace (sourceText, "%20");
-            var url = "https://translate.google.com.vn/translate_tts?/ie=UTF-8&q=" + text
+            var url = "https://translate.google.com.vn/translate_tts?/ie=UTF-8&q=" + WWW.EscapeURL(sourceText)
                 + "&tl=" + targetLang + "&client=tw-ob";
 
             var www = new WWW(url);
