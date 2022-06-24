@@ -1,3 +1,4 @@
+Abacus
 Academic
 Accordion
 Action-camera
@@ -19,6 +20,7 @@ Army-dog-tag
 Art-gallery
 Artillery
 Astronaut
+Atomic
 Atv
 Aubergine
 Australia
@@ -28,6 +30,7 @@ Backpack
 Baguette
 Ball
 Banana
+Bandage
 Banjo
 Barbecue
 Barn
@@ -35,6 +38,8 @@ Barrier
 Basketball
 Bathtub
 Bazooka
+Beach-chair
+Beach
 Beans
 Bee
 Beehive
@@ -49,6 +54,7 @@ Birdhouse
 Bison
 Blackboard
 Blocks
+Blood-transfusion
 Blueberries
 Boar
 Boat
@@ -111,6 +117,7 @@ Chocolate-egg
 Chocolate
 Chopping-board
 Chronometer
+Cicada
 Cinema
 Circular-saw
 Circus-tent
@@ -126,10 +133,13 @@ Coat-stand
 Coconut
 Coffee-cup
 Coffee
+College
 Colosseum
+Column
 Compass
 Concierge
 Concrete-mixer
+Cone
 Confetti
 Cooking-pot
 Coral
@@ -148,6 +158,7 @@ Cutter
 Dagger
 Dart-board
 Deer
+Defribillator
 Desk-lamp
 Desk
 Detective
@@ -172,6 +183,7 @@ Duomo-di-milano
 Durian
 Earphone
 Earth-globe
+Earthquake
 Egg-carton
 Egg
 Egypt
@@ -192,6 +204,9 @@ Fin
 Finland
 Fins
 Fire-extinguisher
+Fire-hose
+Fire-hydrant
+Fire-truck
 Fire
 Firefighter
 Firepit
@@ -200,18 +215,22 @@ First-aid-kit
 Fish
 Fishing-hook
 Fishing-rod
+Fishing
 Flamingo
 Flare
 Flask
+Flip-flop
 Flip-flops
 Floor-lamp
 Flower
+Food-truck
 Football-field
 Forbidden-city
 Fortress
 Fossil
 Fox
 France
+Frangipani
 French-horn
 Fridge
 Fries
@@ -227,6 +246,7 @@ Germany
 Gingerbread
 Giraffe
 Glass
+Globe
 Gloves
 Golden-gate
 Golf
@@ -245,6 +265,7 @@ Gyeongbokgung-palace
 Hairdryer
 Hamburguer
 Hammer
+Hammock
 Hand-bag
 Hand-drill
 Handbag
@@ -253,6 +274,7 @@ Harmonica
 Harp
 Harvest
 Hat
+Hawaiian-shirt
 Hedgehog
 Helicopter
 Helmet
@@ -266,6 +288,8 @@ Honey
 Hoodie
 Hook
 Horse
+Hospital
+Hot-temperature
 House
 Hut
 Ice-cream
@@ -274,6 +298,7 @@ Ice-skating
 Iceberg
 Iceland
 Idea
+Internet
 Iron
 Ironing-board
 Island
@@ -294,6 +319,7 @@ Kettle
 Kick-scooter
 Kimono
 Kinderdijk-windmills
+Kite
 Kitesurf
 Kiwi
 Knife
@@ -304,11 +330,13 @@ Lantern
 Laos
 Laptop
 Laser
+Law
 Leaf
 Leaning-tower-of-pisa
 Lemon
 Life-ring
 Life-vest
+Lifeguard
 Lighthouse
 Lime
 Lion
@@ -317,6 +345,7 @@ Lobster
 Location
 Log
 Lotus
+Lounger
 Luggage
 Lyre
 Macaron
@@ -327,6 +356,7 @@ Magician
 Maracas
 Maracuya
 Mars-rover
+Math
 Maya
 Measuring-tape
 Meat
@@ -336,6 +366,7 @@ Melodica
 Metronome
 Mexico
 Microphone
+Microscope
 Microwave
 Military-base
 Military-truck
@@ -349,6 +380,7 @@ Mortar
 Motorbike
 Mount-fuji
 Mountain-bike
+Mountain
 Mushroom
 Mushrooms
 Music-player
@@ -368,12 +400,14 @@ Oman
 Orchid
 Ostrich
 Owl
+Oxygen-mask
 Oxygen-tank
 Pagoda
 Paint-brush
 Paint-palette
 Paint-roller
 Painting
+Pamela-hat
 Panda-bear
 Panther
 Pants
@@ -385,6 +419,7 @@ Parthenon
 Peach
 Pear
 Pencil
+Pendulum
 Penguin
 Piano
 Pick-up-truck
@@ -403,6 +438,7 @@ Plant
 Pliers
 Plug
 Plunger
+Police
 Policeman
 Polo
 Popcorn
@@ -426,6 +462,7 @@ Raspberry
 Rice-cooker
 Rice
 Rifle
+Ring-bell
 Rocket
 Roller-skate
 Roman-helmet
@@ -453,7 +490,9 @@ Seahorse
 Seal
 Shark
 Sharpener
+Shaved-ice
 Sheep
+Shell
 Shield
 Ship
 Shipwreck
@@ -466,6 +505,7 @@ Shrimp
 Sign
 Singer
 Sink
+Siren
 Skate-park
 Skate
 Skateboard
@@ -507,21 +547,26 @@ Stove
 Strawberry
 Submarine
 Sun
+Sunblock
 Sunglasses
 Supply
 Surf
+Surfboard
 Surgeon
 Sushi
 Swamp
 Swan
 Sweater
 Sweden
+Swimming-pool
+Swimming-suit
 Swimsuit
 Sword
 Syria
 Table-lamp
 Taj-mahal
 Tambourine
+Tank-top
 Tank
 Target
 Taxi-driver
@@ -530,10 +575,13 @@ Teapot
 Telescope
 Television
 Tennis
+Tent
+Test-tube
 Test
 Thailand
 Theater-masks
 Thermo
+Thermometer
 Thief
 Tie
 Tiger
@@ -547,6 +595,7 @@ Torch
 Torii-gate
 Totem
 Toucan
+Tow-truck
 Towel-rack
 Tower-bridge
 Tractor
@@ -582,6 +631,7 @@ Vacuum-cleaner
 Vase
 Vest
 Video-recorder
+View
 Viking
 Vines
 Vinyl-disc
