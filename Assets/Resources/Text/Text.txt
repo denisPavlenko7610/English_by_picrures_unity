@@ -11,10 +11,12 @@ Ant
 Anteater
 Antenna
 Anvil
+Apparel
 Apple-tree
 Apple
 Archery
 Argentina
+Armchair
 Armor
 Army-dog-tag
 Art-gallery
@@ -44,6 +46,7 @@ Beans
 Bee
 Beehive
 Belt
+Bench-press
 Berries
 Big-ben
 Big-dipper
@@ -53,6 +56,7 @@ Biology
 Birdhouse
 Bison
 Blackboard
+Blender
 Blocks
 Blood-transfusion
 Blueberries
@@ -61,6 +65,7 @@ Boat
 Bomb
 Bone
 Book
+Bookshelf
 Boomerang
 Boot
 Boots
@@ -84,6 +89,7 @@ Cacao
 Cake
 Calculator
 Calendar
+Calories
 Camel
 Camera
 Candy
@@ -101,8 +107,10 @@ Cashier
 Castle
 Cat
 Catapult
+Chair
 Chameleon
 Chandelier
+Changing-room
 Cheese
 Chef
 Cherries
@@ -153,6 +161,7 @@ Croissant
 Croupier
 Crown
 Cuba
+Cupboard
 Cupcake
 Cutter
 Dagger
@@ -172,16 +181,19 @@ Dog
 Dolphin
 Donut
 Door-key
+Door
 Double-bass
 Double-bed
 Doughnut
 Dragonfly
 Dress
+Dressing-table
 Drum
 Duck
 Duomo-di-milano
 Durian
 Earphone
+Earphones
 Earth-globe
 Earthquake
 Egg-carton
@@ -191,6 +203,7 @@ Eiffel-tower
 Electric-kettle
 Elephant
 Empire-state
+Energy-bar
 Eraser
 Ethiopia
 Extraction-hood
@@ -210,6 +223,7 @@ Fire-truck
 Fire
 Firefighter
 Firepit
+Fireplace
 Fireworks
 First-aid-kit
 Fish
@@ -238,6 +252,7 @@ Frog
 Galaxy
 Game-console
 Game-controller
+Garage
 Garlic
 Gas-mask
 Gas-stove
@@ -262,6 +277,9 @@ Guitar
 Gummy-bear
 Gun
 Gyeongbokgung-palace
+Gym-machine
+Gym
+Gymnastic-rings
 Hairdryer
 Hamburguer
 Hammer
@@ -270,11 +288,13 @@ Hand-bag
 Hand-drill
 Handbag
 Hang-gliding
+Hanger
 Harmonica
 Harp
 Harvest
 Hat
 Hawaiian-shirt
+Heater
 Hedgehog
 Helicopter
 Helmet
@@ -316,6 +336,7 @@ Kaaba
 Kangaroo
 Kayak
 Kettle
+Kettlebell
 Kick-scooter
 Kimono
 Kinderdijk-windmills
@@ -326,6 +347,7 @@ Knife
 Knight
 Koala
 Ladder
+Lamp
 Lantern
 Laos
 Laptop
@@ -345,6 +367,7 @@ Lobster
 Location
 Log
 Lotus
+Loudspeaker
 Lounger
 Luggage
 Lyre
@@ -353,6 +376,7 @@ Machete
 Machine-gun
 Magic-wand
 Magician
+Mailbox
 Maracas
 Maracuya
 Mars-rover
@@ -370,6 +394,8 @@ Microscope
 Microwave
 Military-base
 Military-truck
+Mineral-water
+Mirror
 Moai
 Module
 Monkey
@@ -381,6 +407,7 @@ Motorbike
 Mount-fuji
 Mountain-bike
 Mountain
+Muscle
 Mushroom
 Mushrooms
 Music-player
@@ -433,6 +460,7 @@ Pint
 Pipe
 Pitcher
 Pizza
+Plan
 Planet
 Plant
 Pliers
@@ -445,6 +473,7 @@ Popcorn
 Portugal
 Potato
 Priest
+Protein
 Pumpkin
 Push-pin
 Pyramid
@@ -501,6 +530,7 @@ Shoes
 Shoot
 Shovel
 Shower-head
+Shower
 Shrimp
 Sign
 Singer
@@ -509,10 +539,12 @@ Siren
 Skate-park
 Skate
 Skateboard
+Skipping-rope
 Skirt
 Slingshot
 Slot-machine
 Smartphone
+Smartwatch
 Smoke-grenade
 Snail
 Snake
@@ -538,11 +570,14 @@ Spinning-top
 Sport-shoes
 Squid
 Squirrel
+Stairs
 Starfish
+Stationary-bike
 Statue
 Steak
 Stone-axe
 Stonehenge
+Stopwatch
 Stove
 Strawberry
 Submarine
@@ -558,6 +593,7 @@ Swamp
 Swan
 Sweater
 Sweden
+Swedish-wall
 Swimming-pool
 Swimming-suit
 Swimsuit
@@ -597,12 +633,16 @@ Totem
 Toucan
 Tow-truck
 Towel-rack
+Towel
 Tower-bridge
 Tractor
 Traffic-cone
 Trailer
 Train
+Trainers
 Trash-can
+Trash
+Treadmill
 Treasure-chest
 Treasure-map
 Treasure
@@ -640,11 +680,14 @@ Volcano
 Volleyball
 Wafer
 Walkie-talkie
+Wall-clock
 Wallet
 Walrus
+Wardrobe
 Washing-machine
 Water-bucket
 Water-gun
+Water-heater
 Water-ski
 Water-well
 Water
@@ -652,11 +695,13 @@ Waterfall
 Watermelon
 Wave
 Wedge-heel
+Weights
 Welder
 Whale
 Wheelbarrow
 Whistle
 Windmill
+Window
 Wine-barrel
 Wrench
 Wristwatch
