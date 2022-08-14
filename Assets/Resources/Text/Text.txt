@@ -4,6 +4,7 @@ Accordion
 Action-camera
 Alarm-clock
 Alien
+Aluminum
 American-football
 Ammunition
 Anchor
@@ -22,6 +23,7 @@ Army-dog-tag
 Art-gallery
 Artillery
 Astronaut
+Atom
 Atomic
 Atv
 Aubergine
@@ -31,6 +33,7 @@ Axe
 Backpack
 Baguette
 Ball
+Bamboo
 Banana
 Bandage
 Banjo
@@ -137,6 +140,7 @@ Clock
 Closet
 Clothes-hanger
 Clown
+Coal
 Coat-stand
 Coconut
 Coffee-cup
@@ -150,6 +154,7 @@ Concrete-mixer
 Cone
 Confetti
 Cooking-pot
+Copper
 Coral
 Corn
 Cotton-candy
@@ -160,6 +165,7 @@ Crayon
 Croissant
 Croupier
 Crown
+Crystal
 Cuba
 Cupboard
 Cupcake
@@ -168,10 +174,12 @@ Dagger
 Dart-board
 Deer
 Defribillator
+Desert
 Desk-lamp
 Desk
 Detective
 Diamond-ring
+Diamond
 Dice
 Dinosaur
 Diver
@@ -233,7 +241,6 @@ Fishing
 Flamingo
 Flare
 Flask
-Flip-flop
 Flip-flops
 Floor-lamp
 Flower
@@ -249,6 +256,7 @@ French-horn
 Fridge
 Fries
 Frog
+Fruit
 Galaxy
 Game-console
 Game-controller
@@ -260,13 +268,16 @@ Gemstone
 Germany
 Gingerbread
 Giraffe
+Glacier
 Glass
 Globe
 Gloves
+Gold
 Golden-gate
 Golf
 Gramophone
 Grapes
+Grass
 Great-mosque-of-samarra
 Great-sphinx-of-giza
 Great-wall-of-china
@@ -377,6 +388,7 @@ Machine-gun
 Magic-wand
 Magician
 Mailbox
+Manure
 Maracas
 Maracuya
 Mars-rover
@@ -394,6 +406,7 @@ Microscope
 Microwave
 Military-base
 Military-truck
+Mine
 Mineral-water
 Mirror
 Moai
@@ -414,17 +427,21 @@ Music-player
 Musical-note
 Musician
 Native-indian
+Natural-gas
 Necklace
 Ninja
 Notebook
+Nuclear-energy
 Nun
 Nunchaku
 Obelisk
 Observatory
 Octopus
 Oil-lamp
+Oil
 Oman
 Orchid
+Ore
 Ostrich
 Owl
 Oxygen-mask
@@ -439,6 +456,7 @@ Panda-bear
 Panther
 Pants
 Paper-plane
+Paper
 Papyrus
 Parachute
 Parrot
@@ -501,6 +519,7 @@ Ruler
 Russia
 Sailing
 Salmon
+Salt
 Sand-bucket
 Sandwich
 Satellite
@@ -517,6 +536,7 @@ Scythe
 Seagull
 Seahorse
 Seal
+Seed
 Shark
 Sharpener
 Shaved-ice
@@ -551,11 +571,13 @@ Snake
 Snare-drum
 Sneakers
 Snorkel-gear
+Snowflake
 Snowmobile
 Soap-bottle
 Soccer
 Socks
 Sofa
+Solar-panel
 Solar-system
 Soldier
 Sos
@@ -576,6 +598,7 @@ Stationary-bike
 Statue
 Steak
 Stone-axe
+Stone
 Stonehenge
 Stopwatch
 Stove
@@ -669,6 +692,7 @@ Utility-knife
 Uzi
 Vacuum-cleaner
 Vase
+Vegetable
 Vest
 Video-recorder
 View
@@ -688,6 +712,7 @@ Washing-machine
 Water-bucket
 Water-gun
 Water-heater
+Water-mill
 Water-ski
 Water-well
 Water
@@ -698,11 +723,15 @@ Wedge-heel
 Weights
 Welder
 Whale
+Wheat
 Wheelbarrow
 Whistle
+Wind-mill
+Wind
 Windmill
 Window
 Wine-barrel
+Wood
 Wrench
 Wristwatch
 Xylophone

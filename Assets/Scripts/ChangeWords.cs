@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
+using EnglishByPictures.Ads;
+using GoogleMobileAds.Api;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -90,7 +92,21 @@ namespace EnglishByPictures
         }
 
 
-        void Learn() => ShowWord();
+        void Learn()
+        {
+            CheckToShowIntestinalAd();
+            ShowWord();
+        }
+
+        private static void CheckToShowIntestinalAd()
+        {
+            Interstitial.CountToShowAd++;
+            if (Interstitial.CountToShowAd == 15)
+            {
+                Interstitial.CountToShowAd = 0;
+                Interstitial.RequestInterstitial();
+            }
+        }
 
         void Know()
         {
