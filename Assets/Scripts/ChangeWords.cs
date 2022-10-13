@@ -118,8 +118,8 @@ namespace EnglishByPictures
 
             ShowWordsLeft();
             ShowWord();
+            loadAndSave.SaveLearnedWords(Application.persistentDataPath, learnedWords);
         }
-
 
         void RemoveLearnedWords()
         {
