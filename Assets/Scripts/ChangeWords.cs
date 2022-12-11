@@ -38,10 +38,10 @@ namespace EnglishByPictures
                 dropdownLanguages = FindObjectOfType<DropdownLanguages>();
         }
 
-        void Start()
+        async void Start()
         {
             Init();
-            ShowWord();
+            await ShowWord();
         }
 
         void Init()
@@ -56,7 +56,7 @@ namespace EnglishByPictures
             ShowWordsLeft();
         }
 
-        void ChangeCulture() => GetTranslatedText(CurrentWord);
+        async void ChangeCulture() => await GetTranslatedText(CurrentWord);
 
         void ShowWordsLeft() => wordsLeftText.text = $"{words.Count} words left";
 

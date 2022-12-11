@@ -15,6 +15,8 @@ Anvil
 Apparel
 Apple-tree
 Apple
+Aquarium
+Archery-board
 Archery
 Argentina
 Armchair
@@ -23,6 +25,7 @@ Army-dog-tag
 Art-gallery
 Artillery
 Astronaut
+Astronomy
 Atom
 Atomic
 Atv
@@ -31,6 +34,7 @@ Australia
 Avocado
 Axe
 Backpack
+Bag
 Baguette
 Ball
 Bamboo
@@ -40,6 +44,8 @@ Banjo
 Barbecue
 Barn
 Barrier
+Baseball
+Basket-ball
 Basketball
 Bathtub
 Bazooka
@@ -54,6 +60,7 @@ Berries
 Big-ben
 Big-dipper
 Bike
+Billiard-ball
 Binoculars
 Biology
 Birdhouse
@@ -73,6 +80,7 @@ Boomerang
 Boot
 Boots
 Bow-tie
+Bowling-pin
 Bowling
 Boxing
 Brandenburg-gate
@@ -95,7 +103,9 @@ Calendar
 Calories
 Camel
 Camera
+Camping
 Candy
+Canvas-holder
 Capitol
 Captain
 Capybara
@@ -136,6 +146,7 @@ Clamp
 Clapperboard
 Clarinet
 Cleaning-spray
+Cleats
 Clock
 Closet
 Clothes-hanger
@@ -160,6 +171,7 @@ Corn
 Cotton-candy
 Cow
 Crab
+Craft
 Crate
 Crayon
 Croissant
@@ -170,6 +182,7 @@ Cuba
 Cupboard
 Cupcake
 Cutter
+Cycling
 Dagger
 Dart-board
 Deer
@@ -250,6 +263,7 @@ Forbidden-city
 Fortress
 Fossil
 Fox
+Frame
 France
 Frangipani
 French-horn
@@ -257,6 +271,7 @@ Fridge
 Fries
 Frog
 Fruit
+Frying-pan
 Galaxy
 Game-console
 Game-controller
@@ -305,6 +320,7 @@ Harp
 Harvest
 Hat
 Hawaiian-shirt
+Headphone
 Heater
 Hedgehog
 Helicopter
@@ -356,6 +372,7 @@ Kitesurf
 Kiwi
 Knife
 Knight
+Knitting
 Koala
 Ladder
 Lamp
@@ -440,6 +457,7 @@ Octopus
 Oil-lamp
 Oil
 Oman
+Online-shopping
 Orchid
 Ore
 Ostrich
@@ -459,6 +477,7 @@ Paper-plane
 Paper
 Papyrus
 Parachute
+Paragliding
 Parrot
 Parthenon
 Peach
@@ -481,9 +500,11 @@ Pizza
 Plan
 Planet
 Plant
+Playing-cards
 Pliers
 Plug
 Plunger
+Poker-cards
 Police
 Policeman
 Polo
@@ -516,6 +537,7 @@ Roman-helmet
 Rope
 Rubber-duck
 Ruler
+Running
 Russia
 Sailing
 Salmon
@@ -532,11 +554,13 @@ Scarf
 School-bell
 Scissors
 Screwdriver
+Scuba-diving
 Scythe
 Seagull
 Seahorse
 Seal
 Seed
+Sewing-machines
 Shark
 Sharpener
 Shaved-ice
@@ -623,6 +647,7 @@ Swimsuit
 Sword
 Syria
 Table-lamp
+Table-tennis
 Taj-mahal
 Tambourine
 Tank-top
@@ -654,6 +679,7 @@ Torch
 Torii-gate
 Totem
 Toucan
+Tourism
 Tow-truck
 Towel-rack
 Towel
@@ -683,6 +709,7 @@ Turkey-country
 Turkey
 Turntable
 Turtle
+Typewriter
 Uk
 Umbrella
 Unicycle
@@ -734,4 +761,5 @@ Wine-barrel
 Wood
 Wrench
 Wristwatch
+Writing
 Xylophone
