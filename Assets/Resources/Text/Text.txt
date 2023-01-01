@@ -1,12 +1,15 @@
 Abacus
+Abuse
 Academic
 Accordion
+Account
 Action-camera
 Alarm-clock
 Alien
 Aluminum
 American-football
 Ammunition
+Ancestors
 Anchor
 Ant
 Anteater
@@ -31,6 +34,7 @@ Atomic
 Atv
 Aubergine
 Australia
+Autoimmune-disease
 Avocado
 Axe
 Backpack
@@ -65,6 +69,7 @@ Binoculars
 Biology
 Birdhouse
 Bison
+Bit
 Blackboard
 Blender
 Blocks
@@ -100,6 +105,7 @@ Cacao
 Cake
 Calculator
 Calendar
+Calm
 Calories
 Camel
 Camera
@@ -156,6 +162,7 @@ Coat-stand
 Coconut
 Coffee-cup
 Coffee
+Collaboration
 College
 Colosseum
 Column
@@ -174,6 +181,7 @@ Crab
 Craft
 Crate
 Crayon
+Crime
 Croissant
 Croupier
 Crown
@@ -196,6 +204,7 @@ Diamond
 Dice
 Dinosaur
 Diver
+Diversity
 Diving
 Doctor
 Dog
@@ -223,13 +232,18 @@ Egypt
 Eiffel-tower
 Electric-kettle
 Elephant
+Emotion
 Empire-state
 Energy-bar
 Eraser
 Ethiopia
+Event
+Executioner
+Expansion
 Extraction-hood
 Fan
 Farmer
+Feedback
 Fence
 Fencing
 Figure-skating
@@ -270,6 +284,8 @@ French-horn
 Fridge
 Fries
 Frog
+Front-door
+Front
 Fruit
 Frying-pan
 Galaxy
@@ -319,8 +335,12 @@ Harmonica
 Harp
 Harvest
 Hat
+Hate
 Hawaiian-shirt
 Headphone
+Heart-disease
+Heat-wave
+Heat
 Heater
 Hedgehog
 Helicopter
@@ -338,6 +358,7 @@ Horse
 Hospital
 Hot-temperature
 House
+Housekeeper
 Hut
 Ice-cream
 Ice-hockey
@@ -345,12 +366,17 @@ Ice-skating
 Iceberg
 Iceland
 Idea
+Infectious-disease
+Infectious
+Insurance
 Internet
 Iron
 Ironing-board
 Island
 Italy
 Jacket
+Jail
+Janitor
 Japan
 Jeep
 Jellyfish
@@ -365,6 +391,7 @@ Kayak
 Kettle
 Kettlebell
 Kick-scooter
+Kidney
 Kimono
 Kinderdijk-windmills
 Kite
@@ -394,9 +421,11 @@ Llama
 Lobster
 Location
 Log
+Loss
 Lotus
 Loudspeaker
 Lounger
+Low-price
 Luggage
 Lyre
 Macaron
@@ -411,6 +440,7 @@ Maracuya
 Mars-rover
 Math
 Maya
+Measuring-cup
 Measuring-tape
 Meat
 Medal
@@ -437,6 +467,8 @@ Motorbike
 Mount-fuji
 Mountain-bike
 Mountain
+Move
+Moving-truck
 Muscle
 Mushroom
 Mushrooms
@@ -446,6 +478,7 @@ Musician
 Native-indian
 Natural-gas
 Necklace
+Networking
 Ninja
 Notebook
 Nuclear-energy
@@ -457,10 +490,13 @@ Octopus
 Oil-lamp
 Oil
 Oman
+Online-learning
 Online-shopping
 Orchid
 Ore
+Organization
 Ostrich
+Oven
 Owl
 Oxygen-mask
 Oxygen-tank
@@ -482,6 +518,7 @@ Parrot
 Parthenon
 Peach
 Pear
+Penalty
 Pencil
 Pendulum
 Penguin
@@ -511,8 +548,14 @@ Polo
 Popcorn
 Portugal
 Potato
+Price-tag
+Price
 Priest
+Prison
+Prisoner
+Profits
 Protein
+Public-relations
 Pumpkin
 Push-pin
 Pyramid
@@ -527,6 +570,9 @@ Rafting
 Rain
 Rake
 Raspberry
+Rate
+Receptionist
+Reload
 Rice-cooker
 Rice
 Rifle
@@ -560,6 +606,7 @@ Seagull
 Seahorse
 Seal
 Seed
+Servant
 Sewing-machines
 Shark
 Sharpener
@@ -583,12 +630,14 @@ Siren
 Skate-park
 Skate
 Skateboard
+Skin-allergy
 Skipping-rope
 Skirt
 Slingshot
 Slot-machine
 Smartphone
 Smartwatch
+Smile
 Smoke-grenade
 Snail
 Snake
@@ -614,6 +663,7 @@ Speaker
 Spear
 Spinning-top
 Sport-shoes
+Spotlight
 Squid
 Squirrel
 Stairs
@@ -652,6 +702,7 @@ Taj-mahal
 Tambourine
 Tank-top
 Tank
+Tape
 Target
 Taxi-driver
 Tea
@@ -673,6 +724,7 @@ Tiramisu
 Toast
 Toilet-brush
 Tomato
+Tongue
 Toolbox
 Torah
 Torch
@@ -680,6 +732,7 @@ Torii-gate
 Totem
 Toucan
 Tourism
+Tournament
 Tow-truck
 Towel-rack
 Towel
@@ -730,6 +783,7 @@ Violin
 Volcano
 Volleyball
 Wafer
+Waiter
 Walkie-talkie
 Wall-clock
 Wallet
@@ -747,6 +801,7 @@ Waterfall
 Watermelon
 Wave
 Wedge-heel
+Weight-loss
 Weights
 Welder
 Whale
